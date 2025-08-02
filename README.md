@@ -1,11 +1,13 @@
 # Ethos-BotManagement
 
+#### Summary
 This module is to manage the Telegram Bot Accounts that we create from a verified Telegram account.  These bots will be all stored together and act as a pool of bot agents that can then be assigned to Telegram channels through other EthosProject Modules.  Other EthosProject modules will be able to grab one of these bots to use for their Module's workflow.  
 
-In the first versions of this, we will explore the layout and how to display elements and then how to add, edit, delete, assign, enable, and disable bots.
-
+#### Module Highlights
 - This module will be used to register bot accounts created by @botfather on Telegram.  A normal, registered Telegram account can create an unlimited amount of bots using @botfather and each of these accounts will generate an API Key.
-- This module will be initially used to record the bots that have been created by @botfather on Telegram and their information will be stored in a secure Database.
+- This module will be initially used to record the bots that have been created by @botfather on Telegram and this information will be input into the UI and their information will be stored in a secure Database.
+
+##### Database Information
   - Item that will be stored in the secure database but other trusted modules will need to be able to view the information within these database records.
     - The Bot Name (This can be anything) let's say up to a max of 50 characters in the database
       - For now, this will be manually created and manually entered into the Bot creation tool in Ethos-BotManagement
@@ -24,8 +26,17 @@ In the first versions of this, we will explore the layout and how to display ele
         - This will allow for a bot to contain historical information or updates which might have valuable information such as during an investigation or prolonged operation to infiltrate, etc.
       - Database Field Name:  ```BOT_NOTES```
         - This field, over time, could accumulate lots of historical notes.  Almost like records within a field and perhaps a sort of JSON structure will work best here unless you have a better suggestion.
+       
+### User Interface (UI) Details
+
+#### Refer to the UI.md file for the layout instructions and retaining all of the rules within the original PLANNING.md file.
+
+- The Ethos-BotManagement Module UI will open up once Ethos-BotManagement is clicked from the left navigation panel from the EthosProject main page.
+- The Ethos-BotManagement visual layout will be very similar to the Ethos-OCR module.
+
+
 
         
-# Refer to the UI.md file for the layout instructions and retaining all of the rules within the original PLANNING.md file.
+
  
 
