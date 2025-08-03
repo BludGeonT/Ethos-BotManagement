@@ -21,8 +21,13 @@ A single bot account can run many different tasks for any single channel dependi
 When an admin click ```ADD``` to add in a new Telegram bot, there will be a dialog window that will gather the information below.
 
 - Bot Username:  The Bot Username should be the same name that was used to name the bot.  Note, this is different than the actual @ bot name.  This Username can be anything and different from the Bot Name.
-- Bot Name: This is the telegram name for the bot and it must end with bot, _bot, -bot.  This is a hard requirement for Telegram.
-- Bot 
+  - ```BOT_USERNAME``` Database field name
+- Bot Name:  This is the telegram name for the bot and it must end with bot, _bot, -bot.  This is a hard requirement for Telegram.
+  - ```BOT_NAME``` Database field name
+- Bot API Key:  This is the API Key that is provided by @botfather upon creation of a new bot.  More information about this in the ```README.md``` file
+  - ```BOT_APIKEY``` Database field name
+- Bot Notes: This is where notes about the Bot will be stored by Operators.  More information about this specific database field in the ```README.md``` file
+  - ```BOT_NOTES``` Database field name
 
 We can add more statistics for these configured bots later, but for now, we just need these to be in a database that can be access by the EthosProject.  Eventually, the ID of the bot will be used in other modules and databases but for now, let's just make this basic to get the foundation laid.
 
