@@ -16,9 +16,9 @@ A single bot account can run many different tasks for any single channel dependi
 - When adding a new bot, the form should ask several questions.  In the future this will be much more dynamic and automated but for now, we'll just add in the information manually into the form after clicking ADD.
 
 
-##### Add User Form Fields
+##### Add Bot Form Fields
 
-When an admin click ```ADD``` to add in a new Telegram bot, there will be a dialog window that will gather the information below.
+When an admin click ```ADD``` to add in a new Telegram bot, there will be a dialog window that will gather the information below.  This information will be prompted and then entered by an EthosProject Operator.  
 
 - Bot Username:  The Bot Username should be the same name that was used to name the bot.  Note, this is different than the actual @ bot name.  This Username can be anything and different from the Bot Name.
   - ```BOT_USERNAME``` Database field name
@@ -31,3 +31,13 @@ When an admin click ```ADD``` to add in a new Telegram bot, there will be a dial
 
 We can add more statistics for these configured bots later, but for now, we just need these to be in a database that can be access by the EthosProject.  Eventually, the ID of the bot will be used in other modules and databases but for now, let's just make this basic to get the foundation laid.
 
+
+##### Edit Bot Form Field Information
+In addition to ADDing new Bots, we need to be able to select a bot record from the visualizer and then be able to click Edit.  When this happens, a section of the screen should draw a new dialog window with organized formatting which will display the information of the Bot record and all of its fields.  
+- This window should then be able to accept input to EDIT the iformation within the Bot Record so that an Operator can make changes.  This won't happen very often but the ability needs to exist.
+
+##### Delete Bot 
+If a bot is selected, and then if an operator clicks DELETE then a dialog will show up asking the EthosProject operator to confirm their selection with a Yes / No question asking are you sure you would like to delete this bot?
+
+### Future UI Work
+As time goes on, we will likely add more fields and functionality within the Bot Records so there will likely be new tables and record fields added in teh future.  For now, we want to start off with basic functionality.
